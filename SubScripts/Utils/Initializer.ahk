@@ -15,6 +15,7 @@ loadWordsRandomizer(wordsRandomizer)
 loadPhonetic(phonetic)
 loadVerbsSynonyms(verbsSynonyms)
 loadPunctuation(punctuation)
+loadBambiTriggersMacros (Triggers)
 if (hesitationMarks or hornyThoughts) {
 	loadHesitationsAndHornyThoughts(true)
 }

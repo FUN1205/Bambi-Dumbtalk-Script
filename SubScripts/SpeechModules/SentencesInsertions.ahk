@@ -2,7 +2,7 @@
 ; Random sentences insertion (Hesitation Marks & Horny Thoughts)
 ;------------------------------------------------------------------------------
 ; Hesitation Marks: Inserts some hesitation marks (ie. "ummm..." or "like...") from time to time
-; Horny Thoughts: Inserts some horny thoughts (ie. "... *god bambi is horny*...") from time to time (less common than hesitation marks)
+; Horny Thoughts: Inserts some horny thoughts (ie. "... *god wanda is horny*...") from time to time (less common than hesitation marks)
 
 ; Script had some issues and weirdness with random insertion, so it had to only be allowed after some specific words
 loadHesitationsAndHornyThoughts(state) {
@@ -34,8 +34,8 @@ insertHesitationsAndHornyThoughts() {
 			Random, Var, 1, 15 ; 1 chance out of 15 to trigger this if we enter this block
 			if (var = 1) {
 				SendInput {BS 1}
-				if (bambiMode = true) {
-					sStrings := "... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |... *gosh, bambi is like, so ditzy*... |... *Why is bambi so wet?*... |"
+				if (wandaMode = true) {
+					sStrings := "... *god wanda is horny*... |... *wanda needs to be fucked*... |... *wanda wants to suck cock soooooo bad*... |... *gosh, wanda is like, so ditzy*... |... *Why is wanda so wet?*... |"
 				} else {
 					sStrings := "... *god I'm horny*... |... *I need to be fucked*... |... *I want to suck cock soooooo bad*... |... *gosh, I'm like, so ditzy*... |... *Why am I so wet?*... |"
 				}
@@ -47,7 +47,7 @@ insertHesitationsAndHornyThoughts() {
 
 
 ;---------------------------------------------------------
-; Randomly add Bambi's thoughts between words ==> DOESN'T WORK
+; Randomly add Wanda's thoughts between words ==> DOESN'T WORK
 ;---------------------------------------------------------
 thoughtsBetweenWords(state) {
 	Hotstring("B0 Z")
